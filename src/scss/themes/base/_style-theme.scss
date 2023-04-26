@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+}
+body.fixednav {
+  margin-top:104px;
+}
+
+.btn,
+.navbar-collapse.collapsing,
+.megamenu.show,
+.nav-link.collapsed,
+.scrolled,
+.shadow,
+.shadow-light,
+.preloader,
+.navbar,
+a,
+a.link-line,
+a.link-line:before,
+a.hover-hide,
+a.hover-content,
+a.hover-hide::before,
+a.hover-hide .hover-content,
+.navbar-collapse.collapse.show,
+img {
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.transform-scale:hover {
+  transform: scale(1.5,1.5);
+}
+
+.display-huge {
+  font-size: calc( 5rem + 3vw );
+}
+
+
+.intro-content::first-letter {
+    float: left;
+    font-size: 4.5em;
+    padding: .15em .25em 0 0;
+    line-height: 4.5rem;
+}
+
+.bg-cover {
+  background-size:cover;
+  background-position:center center
+}
+.navbar {
+  padding-top:32px;
+  padding-bottom:32px;
+}
+.navbar.scrolled {
+  padding-top:12px;
+  padding-bottom:12px;
+  background-color: rgba(255,255,255,.8);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+}
+
+.display-big {font-size:7rem;}
+
+.link-fancy {
+  color: $primary;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.link-fancy:hover {
+  color: $gray-600;
+}
+
+.link-fancy:before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  transform-origin: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, $primary 0, $primary 25%, transparent 0, transparent 50%, $primary 0, $primary 75%, transparent 0, transparent);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 400% 1px;
+  transition: background-position 0.8s ease-in-out;
+}
+
+.link-fancy:hover:before {
+  background-position: 100%;
+}
+
+.navbar-collapse.collapsing, .navbar-collapse.collapse.show {
+  background-color:$white;
+  padding:10px;
+}
+
+.blockquote-xl {
+  font-size: calc(1rem + 1vw);
+  font-style: italic;
+  font-weight:bolder;
+}
+
+.display-huge {
+    font-size: calc(2rem + 2vw);
+}
+
+@include media-breakpoint-up(sm) {
+  .translate-x {
+      margin-left:calc((100%/2 - 270px));
+  }
+}
+@include media-breakpoint-up(md) {
+  .translate-x {
+      margin-left:calc((100%/2 - 360px));
+  }
+}
+@include media-breakpoint-up(lg) {
+  .translate-x {
+      margin-left:calc((100%/2 - 480px));
+  }
+}
+@include media-breakpoint-up(xl) {
+  .translate-x {
+      margin-left:calc((100%/2 - 570px));
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .translate-x {
+      margin-left:calc((100%/2 - 800px));
+  }
+}
+.gradient-1 {
+background-image: linear-gradient(24deg,$white,transparent 21%),linear-gradient(198deg,$pink 11%,transparent 0%),linear-gradient(50deg,$indigo 5%,$purple 32%,$pink 35%,$red 65%,$orange 83%,$blue 91%);
+}
+
+.filter-blur-1 {
+  filter: blur(15rem);
+  width:30rem;
+  height:20rem;
+  opacity:.8;
+}
+
+.filter-blur-2 {
+  filter: blur(19rem);
+}
+.filter-blur-3 {
+  filter: blur(8rem);
+}
+
+.animation-rotate  {
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
+}
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+
+.blob-1 {
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.blob-2 {
+  border-radius: 68% 40% 25% 70% / 60% 40% 27% 50%;
+}
+.blob-3 {
+  border-radius: 67% 40% 63% 70% / 77% 100% 41% 21%;
+}
+
+.blob-4 {
+  border-radius: 67% 52% 0% 70% / 77% 100% 41% 100%;
+}
+
+.blip {
+  background: $purple;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  margin: 10px;
+  transform: scale(1);
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse{
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);
+  }
+}
+
+.text-pink {
+  color:$pink;
+}
+.text-purple {
+  color:$purple;
+}
+.text-indigo {
+  color:$indigo;
+}
+
+.text-blue {
+  color:$blue;
+}
+
+.drop-shadow-light {
+filter: drop-shadow(.15rem -.15rem .25rem $white);
+}

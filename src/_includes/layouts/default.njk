@@ -1,0 +1,21 @@
+---
+stickyNav: yes
+---
+<!doctype html>
+<html class="h-100" lang="{{ metadata.language }}">
+
+  <head>
+    {% include 'snippets/head.njk' %}
+  </head>
+
+  <body class="fixednav {{ bodyModifier }}" data-bs-spy="scroll"  data-bs-target="#navScroll">
+
+    {% include 'snippets/navbar.njk' %}
+    <main>
+      {{ content | safe }}
+    </main>
+
+    {% include 'snippets/footer.njk' %}
+    {% include 'snippets/footerscripts.njk' %}
+  </body>
+</html>
