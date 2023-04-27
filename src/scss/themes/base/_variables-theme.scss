@@ -115,8 +115,8 @@ $purple-soft: rgba($purple, .2);
 $indigo-soft: rgba($indigo, .2);
 
 //XL Buttons
-$btn-padding-y-xl:            calc(1rem + .3vh);
-$btn-padding-x-xl:            calc(1rem + 1.4vw);
+$btn-padding-y-xl:            calc(1rem + .25vh);
+$btn-padding-x-xl:            calc(2.25rem + 1.5vw);
 $btn-font-size-xl:            ($font-size-base*1.2);
 $btn-border-radius-xl:        $border-radius;
 
@@ -134,10 +134,10 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1520px
+  xxl: 1680px
 ) !default;
 // scss-docs-end grid-breakpoints
-
+$enable-negative-margins: true;
 
 
 // Grid containers
@@ -150,6 +150,6 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1440px
+  xxl: 1600px
 ) !default;
 // scss-docs-end container-max-widths

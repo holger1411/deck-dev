@@ -1,8 +1,11 @@
-<svg width="36" height="36" viewBox="0 0 503 503" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="251.5" cy="251.5" r="251.5" fill="black"/>
-<path d="M231.562 145.873L427.439 355.925" stroke="white" stroke-width="22" stroke-linecap="round"/>
-<path d="M152.423 145L216.578 213.798" stroke="white" stroke-width="22" stroke-linecap="round"/>
-<path d="M254.448 256.978L347.552 356.82" stroke="white" stroke-width="22" stroke-linecap="round"/>
-<path d="M253.936 257.399L155 356.335" stroke="white" stroke-width="22" stroke-linecap="round"/>
-<path d="M216.713 214.399L75 356.112" stroke="white" stroke-width="22" stroke-linecap="round"/>
+<svg width="36" height="36" viewBox="0 0 444 444" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="222" cy="222" r="222" fill="black"/>
+<rect x="87" y="80" width="205.163" height="22.1179" fill="white"/>
+<rect x="148.778" y="149.405" width="143.385" height="22.1179" fill="white"/>
+<rect x="148.778" y="275.248" width="143.385" height="22.1179" fill="white"/>
+<rect x="87.1707" y="340.759" width="204.999" height="22.1179" transform="rotate(0.0344497 87.1707 340.759)" fill="white"/>
+<rect x="87" y="307.281" width="205.163" height="22.1179" transform="rotate(-90 87 307.281)" fill="white"/>
+<rect x="329" y="341" width="239" height="22" transform="rotate(-90 329 341)" fill="white"/>
+<rect x="148.778" y="297.366" width="147.961" height="22.1179" transform="rotate(-90 148.778 297.366)" fill="white"/>
+<rect x="270.045" y="362.957" width="213.552" height="22.1179" transform="rotate(-90 270.045 362.957)" fill="white"/>
 </svg>
