@@ -3,7 +3,6 @@
 
   <head>
     {% include 'snippets/head.njk' %}
-    {% include 'snippets/scripts.njk' %}
   </head>
 
   <body {% if (bodyModifier) %} class=" position-relative {{ bodyModifier }}" {% endif %} data-bs-spy="scroll" data-bs-target="#navScroll">
@@ -28,6 +27,7 @@
         </div>
       </div>
     </div>
+        {% include 'snippets/scripts.njk' %}
   </body>
 
 </html>
