@@ -8,14 +8,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
   <meta name="author" content="Holger Koenemann">
   <meta name="generator" content="Eleventy v2.0.0">
   <meta name="HandheldFriendly" content="true">
-  <title>Stride HTML Template - Frontpage one</title>
+  <title>Welcome!</title>
   <link rel="stylesheet" href="css/theme.min.css">
-
    <style>
+
+
 
 /* inter-300 - latin */
 @font-face {
@@ -51,660 +52,131 @@
 
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+  <body class="position-relative d-flex h-100 w-100" data-bs-spy="scroll" data-bs-target="#navScroll">
+    <div class="h-100 container-fluid position-relative">
+      <div class="h-100 row d-flex align-items-stretch position-relative z-1">
+        
+          <div class="p-0 col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-5 d-flex align-items-start flex-column shadow position-relative">
+          
+            <header class="mb-auto py-vh-2 col-12 px-vw-5">
+              <nav id="navScroll" class="navbar navbar-expand-lg navbar-light" tabindex="0">
+    <a class="navbar-brand d-flex align-items-center flex-grow-1" href="/">
 
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
-  <div class="container">
-    <a class="navbar-brand pe-4 fs-4" href="/">
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
-    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
-  </svg>
-  <span class="ms-1 fw-bolder">Stride</span>
+        <div class="fw-bold fs-4">Jane Doe</div>
 </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="col-auto ps-2 ms-2" id="navbarSupportedContent">
+      <ul class="nav ms-auto mb-2 mb-lg-0 ms-2 list-inline list-unstyled">
       <li class="nav-item">
-    <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">
-      Services
+    <a class="nav-link pe-3 link-dark" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z"/>
+</svg>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#aboutus">
-      About us
+    <a class="nav-link pe-3 link-dark" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-behance" viewBox="0 0 16 16">
+  <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z"/>
+</svg>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#numbers">
-      Numbers
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#gallery">
-      Gallery
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#workwithus">
-      Work with us
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#testimonials">
-      Testimonials
+    <a class="nav-link link-dark" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
     </a>
   </li>
 
     </ul>
-      <a href="https://templatedeck.com" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
-        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
-                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-              </svg>
-      </a>
-
     </div>
-</div>
 </nav>
 
-    <main>
-      <div class="w-100 overflow-hidden bg-gray-100" id="top">
-  
-<div class="container position-relative">
-  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/webp/interior11.webp);">
-    
+            </header>
+            <main class="mb-auto col-12 px-vw-5">
+              <div class="bg-light rounded p-5">
+  <div class="on-hover d-inline">
+    <img src="img/webp/person_3_md.webp" width="80" height="80" class="rounded-circle mb-4 shadow-sm mt-2 mt-xxl-4 hoh">
+    <img src="img/webp/person_4_md.webp" width="80" height="80" class="rounded-circle mb-4 shadow-sm mt-2 mt-xxl-4 soh">
   </div>
-    <div class="row">
-
-<div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-  <h1 class="display-1 fw-bold mt-5">Sell more useless stuff faster!</h1>
-  <p class="lead">To be honest, this is just a stupid placeholder text. We don´t know how to sell anything, not even lesser or slower as you.</p>
-  <a href="#" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Get started free</a>
-</div>
-
-
-
-</div>
-</div>
-
-</div>
-
-<div class="py-vh-5 w-100 overflow-hidden" id="services">
-  <div class="container">
-      <div class="row d-flex justify-content-end">
-<div class="col-lg-8" data-aos="fade-down"><h2 class="display-6">Okay, there are three really good reasons for us. There are no more than three, but we think three is a reasonable good number of good stuff.</h2></div>
-</div>
-<div class="row d-flex align-items-center">
-<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-  <span class="h5 fw-lighter">01.</span>
-  <h3 class="py-5 border-top border-dark">We rented this fancy startup office in an old factory building.</h3>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae, ipsam debitis omnis consequuntur iste asperiores. Similique quisquam debitis corrupti deserunt, dolor.</p>
-  <a href="#" class="link-fancy">Learn more
+  <h1 class="fw-lighter">
+    <strong>Welcome to my design universe!</strong>
+    I'm Jane, a Stockholm-based digital product designer with a love for crafting beautiful and functional interfaces.</h1>
+  <p class="lead py-4">
+    Whether it's web or mobile, I'm here to create the perfect user experience for your brand. Hire me and let's make something awesome!</p>
+  <a class="btn btn-black btn-xl shadow me-1 mb-2 mb-xxl-4" href="contact.html">Let´s chat!
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-2" viewbox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
   </a>
 </div>
-
-<div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400">
-  <span class="h5 fw-lighter">02.</span>
-  <h3 class="py-5 border-top border-dark">We don´t know exactly what we are doing. But thats good because we can´t break something intentionally.</h3>
-  <p>Lorem, ipsum dolor sit  adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae, ipsam debitis omnis consequuntur iste asperiores. Similique quisquam debitis corrupti deserunt, dolor.</p>
-  <a href="#" class="link-fancy">Learn more
-  </a>
-</div>
-
-<div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600">
-  <span class="h5 fw-lighter">03.</span>
-  <h3 class="py-5 border-top border-dark">There is no real number three reason. So please read again number one and two.</h3>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae, ipsam debitis omnis consequuntur iste asperiores. Similique quisquam debitis corrupti deserunt, dolor.</p>
-  <a href="#" class="link-fancy">Learn more
-  </a>
-</div>
-</div>
-
-  </div>
-</div>
-
-<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
-  <div class="container">
-      
-<div class="row d-flex justify-content-between align-items-center">
-  <div class="col-lg-6">
-  <div class="row gx-5 d-flex">
-    <div class="col-md-11">
-      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
-      </div>
+<div class="py-vh-3 pb-0">
+  <h2 class="h6 mb-4 px-4">Side Projects:</h2>
+  <div class="d-flex align-items-center p-4">
+    <div class="me-4">
+      <img src="img/webp/bck1.webp" width="80" height="80" class="rounded-circle shadow-sm">
     </div>
-    <div class="col-md-5 offset-md-1">
-      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/webp/interior42.webp);">
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
-      </div>
+    <div class="flex-grow-1">
+      <h3 class="h5">Wall-AI - AI generated Wallpapers for free</h3>
+      <p>Whether it's web or mobile, I'm here to create the perfect user experience for your brand. Hire me</p>
     </div>
   </div>
-</div>
-<div class="col-lg-4">
-  <h3 class="py-5 border-top border-dark" data-aos="fade-left">We did some interesting stuff in our field of work. For example we collect a lot of these free photos and use them on our website.</h3>
-  <p data-aos="fade-left" data-aos-delay="200">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  </p>
-  <p>
-    <a href="#" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Learn more
-    </a>
-  </p>
-</div>
-</div>
-
-  </div>
-</div>
-
-<div class="py-vh-5 w-100 overflow-hidden" id="numbers">
-  <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-  <div class="col-lg-5">
-    <h3 class="py-5 border-top border-dark" data-aos="fade-right">Our magic numbers</h3>
-</div>
-<div class="col-lg-6">
-  <div class="row">
-    <div class="col-12">
-    <h2 class="display-6 mb-5" data-aos="fade-down">There are some important numbers for us. They are just numbers without any meaning, but we just love them.</h2>
+  <div class="d-flex align-items-center my-2 p-4">
+    <div class="me-4">
+      <img src="img/webp/sample4.webp" width="80" height="80" class="rounded-circle shadow-sm">
     </div>
-    <div class="col-lg-6" data-aos="fade-up">
-      <div class="display-1 fw-bold py-4">42%</div>
-      <p class="text-black-50">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-    </div>
-    <div class="col-lg-6" data-aos="fade-up">
-      <div class="display-1 fw-bold py-4">+300</div>
-      <p class="text-black-50">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+    <div class="flex-grow-1">
+      <h3 class="h5">3DArt - The 3D Meetup</h3>
+      <p>Whether it's web or mobile, I'm here to create the perfect user experience for your brand. Hire me</p>
     </div>
   </div>
-</div>
-</div>
-
-  </div>
-</div>
-
-<div class="position-relative overflow-hidden w-100 bg-light" id="gallery">
-  <div class="container-fluid">
-  <div class="row overflow-scroll">
-    <div class="col-12">
-      <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
-        <div class="col-md-2" data-aos="fade-up">
-            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
-        </div>
-
-        <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
-        </div>
-
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-            <img src="img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
-        </div>
-
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
-            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
-        </div>
-
-        <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
-            <img src="img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
-        </div>
-      </div>
+  <div class="d-flex align-items-center p-4">
+    <div class="me-4">
+      <img src="img/webp/sample6.webp" width="80" height="80" class="rounded-circle shadow-sm">
     </div>
-   </div>
- </div>
-
-</div>
-
-<div class="container py-vh-4 w-100 overflow-hidden">
-  <div class="row d-flex justify-content-center align-items-center">
-    <div class="col-lg-5">
-  <h3 class="py-5 border-top border-dark" data-aos="fade-right">What our clients say</h3>
-</div>
-<div class="col-md-7" data-aos="fade-left">
-  <blockquote>
-    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“I´am the CEO of this company. So maybe you think "he will tell us something super awesome about it only". But no. Its a really strange place to work with creepy people all around.
-      They do some computer stuff I don´t understand. But I wear expensive Glasses and a Patagonia Hoodie. So I´am fine with it.”</div>
-    <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
-    <span><span class="fw-bold">John Doe,</span>
-      CEO of Stride Ltd.</span>
-  </blockquote>
-</div>
-
-  </div>
-</div>
-
-<div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="row d-flex justify-content-center text-center">
-  <div class="col-lg-8 text-center" data-aos="fade">
-        <p class="text-secondary lead">Let´s start a project together!</p>
-    <h2 class="display-6 mb-5">Hell no! This button is linked to a none working contact form. A none working form without any user feedback. So you might think you done something wrong. But in reality we just don´t want to start anything with you or anyone else.</h2>
-  </div>
-  <div class="col-12">
-    <a href="#" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down">Get in contact</a>
-  </div>
-</div>
-
+    <div class="flex-grow-1">
+      <h3 class="h5">BirdTree - Freelancer Hangout Space</h3>
+      <p>Whether it's web or mobile, I'm here to create the perfect user experience for your brand. Hire me</p>
     </div>
   </div>
 </div>
 
-<div class="bg-light w-100 overflow-hidden" id="testimonials">
-  <div class="container py-vh-6">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12 col-lg-10 col-xl-8 text-center">
-  <h2 class="display-6">Loved by people all around the globe</h2>
-  <p class="lead">Our spaces and offices are soooooo lovely, no one would give us a negative rating! And look at these trustworthy avatar pictures! Trust us!</p>
-</div>
-<div class="col-12 mt-4">
-  <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
-
-    <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
-      <div class="card p-4 mt-3 border-0">
-        <div class="card-body">
-          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
-</svg>
-</div>
-          <blockquote class="blockquote">
-            <p>"That service is really really good. And I don´t say that because they pay me a lot of money. I say that because they don´t pay me more money anymore if I don´t say it..."</p>
-          </blockquote>
-          <div class="d-flex justify-content-between border-top pt-3">
-            <div>
-              <span class="h6 fw-5">Jane Doemunsky</span><br>
-              <small class="text-muted">COO, The Boo Corp.</small>
-            </div>
-            <img src="img/webp/person9.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-6 col-xl-4">
-      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-down">
-        <div class="card-body">
-          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-</svg>
-</div>
-          <blockquote class="blockquote">
-            <p>"I really don´t get what they do. Something with Crypto, NFT´s, SaaS and Cyber Security. Maybe an App for Kids...? But they have this nice website...so who cares what they do as long as they are good at it."</p>
-          </blockquote>
-          <div class="d-flex justify-content-between border-top pt-3">
-            <p class="card-text">
-              <span class="h6 fw-5">Jenny Matrix</span><br>
-              <small class="text-muted">Daughter of Col. John Matrix, Commando.</small>
-            </p>
-            <img src="img/webp/person3.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-6 col-xl-4">
-      <div class="card p-4 mt-3 border-0" data-aos="fade-left">
-        <div class="card-body">
-          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-</svg>
-</div>
-          <blockquote class="blockquote">
-            <p>"I don´t know if they are good at what they do. But they have nice coffee and a shiny brand new startup office with bikes on the wall and all that stuff."</p>
-          </blockquote>
-          <div class="d-flex justify-content-between border-top pt-3">
-            <p class="card-text">
-              <span class="h6 fw-5">Rustin Cohle</span><br>
-              <small class="text-muted">Detective, Somewhere in the swamps</small>
-            </p>
-            <img src="img/webp/person8.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-6 col-xl-4">
-      <div class="card p-4 mt-3 border-0" data-aos="fade-right">
-        <div class="card-body">
-          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-</svg>
-</div>
-          <blockquote class="blockquote">
-            <p>"Its not good at all but I give it five stars because I killed (accidentally) the CEO´s cat with a lawnmover."</p>
-          </blockquote>
-          <div class="d-flex justify-content-between border-top pt-3">
-            <p class="card-text">
-              <span class="h6 fw-5">Richard Thornburg</span><br>
-              <small class="text-muted">News Reporter, KFLW-TV</small>
-            </p>
-            <img src="img/webp/person14.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-6 col-xl-4">
-      <div class="card p-4 mt-3 border-0" data-aos="fade-up">
-        <div class="card-body">
-          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
-</svg>
-</div>
-          <blockquote class="blockquote">
-            <p>"I´am just a guy who uploads his picture to unsplash.com so that others can use me as placeholder for stupid sample avatars. I don´t even know that my face is on this website."</p>
-          </blockquote>
-          <div class="d-flex justify-content-between border-top pt-3">
-            <p class="card-text">
-              <span class="h6 fw-5">Harry Walters</span><br>
-              <small class="text-muted">Gangster, In Bruges</small>
-            </p>
-            <img src="img/webp/person13.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-6 col-xl-4">
-      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-left">
-        <div class="card-body">
-          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-</div>
-          <blockquote class="blockquote">
-            <p>"Okay, okay, I give it five stars. But do you know what: There is a infinit number of stars out there. So five means nothing."</p>
-          </blockquote>
-          <div class="d-flex justify-content-between border-top pt-3">
-            <p class="card-text">
-              <span class="h6 fw-5">Lizzie Stark</span><br>
-              <small class="text-muted">Head of Security, Brummagem Boys</small>
-            </p>
-            <img src="img/webp/person18.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<div class="small py-vh-3 w-100 overflow-hidden">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up">
-  <div class="d-flex">
-    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
-      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-box-seam" viewbox="0 0 16 16">
-        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
-      </svg>
-    </div>
-    <div class="col-md-9 flex-fill">
-      <h3 class="h5 my-2">Delivery Service</h3>
-      <p>If we had any physical goods we would deliver them to your door steps. Of course in time and to the right adress. But we have no products...</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="200">
-  <div class="d-flex">
-    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
-      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-checklist" viewbox="0 0 16 16">
-        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-      </svg>
-    </div>
-    <div class="col-md-9 flex-fill">
-      <h3 class="h5 my-2">Independently Checked</h3>
-      <p>Maybe we would do something to ensure that you get what you ordered. But you can´t order anything here, so we can give you a 100% gurantee that anything would be great!</p>
-    </div>
-  </div>
-</div>
-
-<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-  <div class="d-flex">
-    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
-      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-window-sidebar" viewbox="0 0 16 16">
-        <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"/>
-      </svg>
-    </div>
-    <div class="col-md-9 flex-fill">
-      <h3 class="h5 my-2">Online Support</h3>
-      <p>Okay, we have this crazy online support form. Fill it out and the content will be mailed to you as PDF. Print it out. Than send it via Fax to our super duper hidden Fax number.</p>
-    </div>
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200">
-  <div class="row d-flex justify-content-center">
-    <div class="col-12 col-lg-8 text-center">
-      <h3 class="fs-2 fw-light">Stay in touch with our<span class="fw-bold">
-          monthly and free</span>
-        newsletter!
-    </h3></div>
-    <div class="col-12 col-lg-8 text-center">
-      <div class="row">
-        <div class="grouped-inputs border bg-light p-2">
-  <div class="row">
-    <div class="col">
-      <form class="form-floating">
-        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
-      </form>
-    </div>
-    <div class="col-auto">
-      <a href="#" class="btn btn-dark py-3 px-5">Subscribe</a>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-    </main>
-
-    <footer>
-  <div class="container small border-top">
-    <div class="row py-5 d-flex justify-content-between">
-
-<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
-    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
-  </svg>
-  <address class="text-secondary mt-3">
-    <strong>Stride, Inc.</strong><br>
-    1355 Market St, Suite 900<br>
-    San Francisco, CA 94103<br>
-    <abbr title="Phone">P:</abbr>
-    (123) 456-7890
-  </address>
-</div>
-<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-  <h3 class="h6 mb-3">Company</h3>
-  <ul class="nav flex-column">
+            </main>
+              <footer class="container px-vw-5 py-vh-2 small">
+  <div class="row d-flex justify-content-between">
+    <div class="col-12 col-md-auto d-flex justify-content-center">
+  <ul class="nav bg-light rounded px-3">
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Lorem ipsum</a>
+      <a class="nav-link link-dark px-0" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewbox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+          <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+        </svg>
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Dolor sitam est</a>
+      <a class="nav-link link-dark" href="aboutme.html">About me</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Sed odio cras</a>
+      <a class="nav-link link-dark" href="imprint.html">Imprint</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Commodo tortor ac</a>
+      <a class="nav-link link-dark" href="contact.html">Contact</a>
     </li>
   </ul>
 </div>
-<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-  <h3 class="h6 mb-3">Products</h3>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Fusce dapibus est</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Donec sed dui</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Tortor mauris</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Ut fermentum massa</a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Magna mollis</a>
-    </li>
-  </ul>
-</div>
-<div class="col-12 col-lg-6 col-xl-3 p-5">
-  <h3 class="h6 mb-3">Subpages</h3>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="register.html">Register System Page</a>
-            <a class="nav-link link-secondary ps-0" aria-current="page" href="content.html">Simple Text Content Page</a>
-    </li>
-  </ul>
-</div>
-</div>
-</div>
-
-<div class="container text-center py-3 small">Made by <a href="https://templatedeck.com" class="link-fancy" target="_blank">templatedeck.com</a>
+  <div class="col-12 col-md text-center text-md-end py-2">Copyright 2023</div>
 </div>
 </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/aos.js"></script>
- <script>
- AOS.init({
-   duration: 800, // values from 0 to 3000, with step 50ms
- });
- </script>
-
- <script>
-  let scrollpos = window.scrollY
-  const header = document.querySelector(".navbar")
-  const header_height = header.offsetHeight
-
-  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
-
-  window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY;
-
-    if (scrollpos >= header_height) { add_class_on_scroll() }
-    else { remove_class_on_scroll() }
-
-    console.log(scrollpos)
-  })
-</script>
-
+          </div>
+          
+            <div class="col-1 col-sm-2 col-md-3 col-lg-4 col-xl-5 col-xxl-7 bg-cover py-vh-max py-lg-0 bg-black ba-local position-fixed top-0 end-0 z-0 h-100" style="background-image: url('./img/webp/bck2.webp');"></div>
+          
+        </div>
+      </div>
+    
   </body>
+
 </html>
