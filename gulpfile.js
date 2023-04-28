@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
-var cleanCSS = require('gulp-clean-css');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 var sass = require('gulp-dart-sass');
 var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
@@ -29,15 +31,14 @@ gulp.task('prod-copy', function (done) {
     done();
 });
 
-gulp.task('minify-css', () => {
-  return gulp
-    .src('dev/css/*.css')
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
-    .pipe( rename( { suffix: '.min' } ) )
-    .pipe(gulp.dest('dev/css'))
-    .pipe(browserSync.stream());
+gulp.task('minify-css', function () {
+    var plugins = [
+        autoprefixer({browsers: ['last 1 version']}),
+        cssnano()
+    ];
+    return gulp.src('dev/css/*.css')
+        .pipe(postcss(plugins))
+        .pipe(gulp.dest('dev/css/min/'));
 });
 
 // minifies HTML
@@ -50,12 +51,12 @@ gulp.task('minify-html', () => {
 
 // Purging unused CSS
 gulp.task('purgecss', () => {
-    return gulp.src('public/css/theme.min.css')
+    return gulp.src('public/css/min/theme.css')
         .pipe(purgecss({
             content: ['public/**/*.html'],
-            safelist: ['collapsed', 'collapse', 'active', 'show', 'showing', 'collapsing', 'modal-open', 'modal-backdrop', 'offcanvas-backdrop', 'fade', 'start',  'aos-init', 'aos-animate' ]
+            safelist: ['collapsed', 'collapse', 'active', 'show', 'showing', 'collapsing', 'modal-open', 'modal-backdrop', 'offcanvas-backdrop', '^fade', 'start',  'aos-init', 'aos-animate', '^flip', '^zoom', 'data-aos', 'data-aos^' ]
         }))
-        .pipe(gulp.dest('public/css'))
+        .pipe(gulp.dest('public/css/min'))
 })
 
 gulp.task('clean-dist', function() {
@@ -101,7 +102,7 @@ gulp.task('sass', function () {
 gulp.task('inject-min-css', function(done) {
   gulp.src('./public/**/*.html')
     .pipe(htmlreplace({
-        'css': 'css/theme.min.css'
+        'css': 'css/min/theme.css'
     }))
     .pipe(gulp.dest('./public'));
          done();
