@@ -1,4 +1,38 @@
-.px-vw-5 {
-  padding-left:8vw;
-  padding-right:8vw;
+@include media-breakpoint-up(xs) {
+  .px-vw-5 {
+    padding-left:2vw;
+    padding-right:2vw;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .px-vw-5 {
+    padding-left:4vw;
+    padding-right:4vw;
+  }
+}
+@include media-breakpoint-up(md) {
+  .px-vw-5 {
+    padding-left:5vw;
+    padding-right:5vw;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .px-vw-5 {
+    padding-left:6vw;
+    padding-right:6vw;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .px-vw-5 {
+    padding-left:7vw;
+    padding-right:7vw;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .px-vw-5 {
+    padding-left:7vw;
+    padding-right:7vw;
+  }
 }
