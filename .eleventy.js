@@ -7,7 +7,18 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 module.exports = function(eleventyConfig) {
   // Universal Shortcodes (Adds to Liquid, Nunjucks, Handlebars)
   eleventyConfig.addShortcode("bgImg", function(imgName, test) {
-    return `  style="background-image: url('./img/webp/${imgName}.webp');"`;
+    return `
+    <style>
+  .bg-img {
+       background-image: url(./img/webp/${imgName}.webp);
+   }
+   @media only screen and (max-width: 576px) {
+       .bg-img {
+           background-image: url(./img/webp/${imgName}-xs.webp);
+       }
+   }
+   </style>
+    `;
   });
 
   // blogposts collection
