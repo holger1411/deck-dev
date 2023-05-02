@@ -14,17 +14,17 @@ module.exports = function(eleventyConfig) {
    }
    @media only screen and (max-width: 576px) {
        .bg-img {
-           background-image: url(./img/webp/${imgName}-xs.webp);
+           background-image: url(./img/webp/${imgName}_xs.webp);
        }
    }
    @media only screen and (max-width: 992px) {
        .bg-img {
-           background-image: url(./img/webp/${imgName}-md.webp);
+           background-image: url(./img/webp/${imgName}_md.webp);
        }
    }
    @media only screen and (min-width: 1201px) {
        .bg-img {
-           background-image: url(./img/webp/${imgName}.webp);
+           background-image: url(./img/webp/${imgName}_xl.webp);
        }
    }
    </style>
