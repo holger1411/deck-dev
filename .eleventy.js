@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
     return `
     <style>
   .bg-img {
-       background-image: url(./img/webp/${imgName}-xl.webp);
+       background-image: url(./img/webp/${imgName}.webp);
    }
    @media only screen and (max-width: 576px) {
        .bg-img {
@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
            background-image: url(./img/webp/${imgName}-md.webp);
        }
    }
-   @media only screen and (max-width: 1200px) {
+   @media only screen and (min-width: 1201px) {
        .bg-img {
            background-image: url(./img/webp/${imgName}.webp);
        }
