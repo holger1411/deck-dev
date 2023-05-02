@@ -12,7 +12,9 @@
   <!-- build:css -->
   <link rel="stylesheet" href="{{ '/css/theme.css' | url }}">
    <!-- endbuild -->
+  {% if bgimg %}
    <link rel="prefetch" as="image" href="./img/webp/{{ bgimg }}.webp">
+   {% endif %}
    <style>
 
 /* inter-300 - latin */
