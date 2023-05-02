@@ -5,7 +5,7 @@ import imageminWebp from 'imagemin-webp';
 	await imagemin(['src/img/*.{jpg,png}'], {
 		destination: 'src/img/webp',
 		plugins: [
-			imageminWebp({quality: 70})
+			imageminWebp({quality: 80})
 		]
 	});
 
