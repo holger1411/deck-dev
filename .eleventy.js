@@ -29,7 +29,7 @@ module.exports = function(eleventyConfig) {
    }
    @media only screen and (min-width: 1441px) {
        .bg-img {
-           background-image: url(./img/webp/${imgName}_md.webp);
+           background-image: url(./img/webp/${imgName}_xl.webp);
        }
    }
    </style>
