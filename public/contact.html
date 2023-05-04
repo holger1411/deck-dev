@@ -14,9 +14,34 @@
   <meta name="HandheldFriendly" content="true">
   <title>Have something to share? Write me!</title>
   <link rel="stylesheet" href="css/min/theme.css">
+    
+    <style>
+  .bg-img {
+       background-image: url(./img/webp/bck6.webp);
+   }
+   @media only screen and (max-width: 576px) {
+       .bg-img {
+           background-image: url(./img/webp/bck6_xs.webp);
+       }
+   }
+   @media only screen and (max-width: 992px) {
+       .bg-img {
+           background-image: url(./img/webp/bck6_xs.webp);
+       }
+   }
+   @media only screen and (max-width: 1440px) {
+       .bg-img {
+           background-image: url(./img/webp/bck6_md.webp);
+       }
+   }
+   @media only screen and (min-width: 1441px) {
+       .bg-img {
+           background-image: url(./img/webp/bck6_xl.webp);
+       }
+   }
+   </style>
+    
    <style>
-
-
 
 /* inter-300 - latin */
 @font-face {
@@ -59,8 +84,8 @@
           <div class="p-0 col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-5 d-flex align-items-start flex-column shadow position-relative">
           
             <header class="mb-auto py-vh-3 col-12 px-vw-5">
-              <nav id="navScroll" class="navbar navbar-expand-lg navbar-light" tabindex="0">
-    <a class="navbar-brand d-flex align-items-center flex-grow-1 link-opacity-50-hover" href="/">
+              <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark d-flex" tabindex="0">
+    <a class="navbar-brand d-flex align-items-center flex-grow-1 link-opacity-50-hover link-dark" href="index.html">
   <div class="fw-bold fs-4">Jane Doe</div>
 </a>
 
@@ -155,12 +180,12 @@
           </footer>
           </div>
           
-            <div class="col-1 col-sm-2 col-md-3 col-lg-4 col-xl-5 col-xxl-7 bg-cover py-vh-max py-lg-0 bg-black ba-local position-fixed top-0 end-0 z-0 h-100" style="background-image: url('./img/webp/bck6.webp');" data-aos="fade"></div>
+            <div class="col-1 col-sm-2 col-md-3 col-lg-4 col-xl-5 col-xxl-7 bg-cover py-vh-max py-lg-0 bg-black ba-local position-fixed top-0 end-0 z-0 h-100 bg-img" data-aos="fade"></div>
           
         </div>
       </div>
     
-        <script src="js/bootstrap.bundle.min.js" async></script>
+      <script src="js/bootstrap.bundle.min.js" async></script>
 <script src="js/aos.js"></script>
  <script>
  AOS.init({ });
