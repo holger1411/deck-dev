@@ -1,9 +1,9 @@
 
   <div class="row d-flex justify-content-between small">
     <div class="col-12 col-md-auto d-flex justify-content-center">
-  <ul class="nav bg-light rounded px-3">
+  <ul class="nav  {% if (darkMode) %} bg-black {% else %}bg-light{% endif %} rounded px-3">
     <li class="nav-item">
-      <a class="nav-link link-dark px-0" href="{{ 'index.html' | url }}" aria-label="Go home!">
+      <a class="nav-link  {% if (darkMode) %} link-light {% else %}link-dark{% endif %} px-0"  {% if (darkMode) %} href="{{ 'index-dark.html' | url }}"" {% else %}href="{{ 'index.html' | url }}"{% endif %} aria-label="Go home!">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewbox="0 0 16 16">
           <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
           <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
@@ -11,13 +11,13 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-dark" href="{{ 'aboutme.html' | url }}">About me</a>
+      <a class="nav-link {% if (darkMode) %} link-light {% else %}link-dark{% endif %}" {% if (darkMode) %} href="{{ 'aboutme-dark.html' | url }} {% else %}href="{{ 'aboutme.html' | url }}{% endif %}">About me</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-dark" href="{{ 'imprint.html' | url }}">Imprint</a>
+      <a class="nav-link {% if (darkMode) %} link-light {% else %}link-dark{% endif %}" {% if (darkMode) %} href="{{ 'imprint-dark.html' | url }} {% else %}href="{{ 'imprint.html' | url }}{% endif %}">Imprint</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-dark" href="{{ 'contact.html' | url }}">Contact</a>
+      <a class="nav-link {% if (darkMode) %} link-light {% else %}link-dark{% endif %}" {% if (darkMode) %} href="{{ 'contact-dark.html' | url }} {% else %}href="{{ 'contact.html' | url }}{% endif %}">Contact</a>
     </li>
   </ul>
 </div>

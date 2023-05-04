@@ -5,7 +5,7 @@
     {% include 'snippets/head.njk' %}
   </head>
 
-  <body {% if (bodyModifier) %} class=" position-relative {{ bodyModifier }}" {% endif %} data-bs-spy="scroll" data-bs-target="#navScroll">
+  <body {% if (bodyModifier) %} class="position-relative {{ bodyModifier }}" {% endif %} data-bs-spy="scroll" data-bs-target="#navScroll" {% if (darkMode) %}  data-bs-theme="dark"{% endif %}>
     <div class="h-100 container-fluid position-relative">
       <div class="h-100 row d-flex align-items-stretch position-relative z-1">
         {% if bgimg %}
