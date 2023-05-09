@@ -22,6 +22,8 @@ gulp.task('dist-assets', function (done) {
         .pipe(gulp.dest('./dev/js'));
     gulp.src('./src/img/**/**.*')
         .pipe(gulp.dest('./dev/img'));
+gulp.src('./src/scss/**.css')
+            .pipe(gulp.dest('./dev/css'));
       done();
 });
 
@@ -53,7 +55,7 @@ gulp.task('purgecss', () => {
     return gulp.src('public/css/min/theme.css')
         .pipe(purgecss({
             content: ['public/**/*.html'],
-safelist: ['collapsed', 'collapse', 'active', 'show', 'showing', 'collapsing', 'modal-open', 'modal-backdrop', 'offcanvas-backdrop', '^fade', 'start',  'aos-init', 'aos-animate', '^flip', '^zoom', 'data-aos', 'data-aos^' ]
+            safelist: ['collapsed', 'collapse', 'active', 'show', 'showing', 'collapsing', 'modal-open', 'modal-backdrop', 'offcanvas-backdrop', '^fade', 'aos', 'start', 'aos-init', 'aos-animate']
         }))
         .pipe(gulp.dest('public/css/min'))
 })
@@ -124,6 +126,11 @@ gulp.task( 'copy-assets', function( done ) {
   	gulp
   		.src( paths.node + '/aos/dist/**/*.css' )
   		.pipe( gulp.dest( paths.dev + '/scss/assets/aos' ) );
+
+// Copy all Animate on Scroll css files
+    	gulp
+    		.src( paths.node + '/aos/dist/**/aos.css' )
+    		.pipe( gulp.dest( paths.dev + '/scss/' ) );
 
       // Copy all Animate on Scroll css files
     	gulp
