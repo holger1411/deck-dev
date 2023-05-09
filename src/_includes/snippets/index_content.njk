@@ -9,12 +9,12 @@
   <p class="lead py-4">
     Whether it's web or mobile, I'm here to create the perfect user experience for your brand. Hire me and let's make something awesome!</p>
 <div class="row d-flex align-items-center mb-2 mb-xxl-4 text-center text-sm-start mx-0">
-  <a class="btn btn-{{colorModifier}} btn-xl shadow col-12 col-sm-auto" href="{{ 'contact.html' | url }}" data-aos="fade-left" data-aos-delay="200">Let´s chat!
+  <a class="btn btn-{{colorModifier}} btn-xl shadow col-12 col-sm-auto" {% if (darkMode) %} href="{{ 'contact-dark.html' | url }}" {% else %}href="{{ 'contact.html' | url }}"{% endif %} data-aos="fade-left" data-aos-delay="200">Let´s chat!
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-2" viewbox="0 0 16 16">
       <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
     </svg>
   </a>
-  <a href="aboutme.html" class="ms-0 ms-sm-3 mt-3 mt-sm-0 col-12 col-sm-auto p-0 {% if (darkMode) %} link-light {% else %}link-dark{% endif %} "  aria-label="Link to my About page" data-aos="fade-left" data-aos-delay="300">More about me</a>
+  <a {% if (darkMode) %} href="{{ 'aboutme-dark.html' | url }}" {% else %}href="{{ 'aboutme.html' | url }}"{% endif %} class="ms-0 ms-sm-3 mt-3 mt-sm-0 col-12 col-sm-auto p-0 {% if (darkMode) %} link-light {% else %}link-dark{% endif %} "  aria-label="Link to my About page" data-aos="fade-left" data-aos-delay="300">More about me</a>
 </div>
 </div>
 <div class="py-vh-3 overflow-x-hidden">

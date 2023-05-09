@@ -10600,7 +10600,13 @@ img {
   display: inline-block;
   position: relative; }
 
+.link-fancy-light {
+  color: #fff; }
+
 .link-fancy:hover {
+  color: #6c757d; }
+
+.link-fancy-light:hover {
   color: #6c757d; }
 
 .link-fancy:before {
@@ -10617,6 +10623,9 @@ img {
   background-position: 0;
   background-size: 400% 1px;
   transition: background-position 0.8s ease-in-out; }
+
+.link-fancy-light:before {
+  background-image: linear-gradient(90deg, #fff 0, #fff 25%, transparent 0, transparent 50%, #fff 0, #fff 75%, transparent 0, transparent); }
 
 .link-fancy:hover:before {
   background-position: 100%; }
