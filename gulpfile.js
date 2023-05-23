@@ -22,8 +22,10 @@ gulp.task('dist-assets', function (done) {
         .pipe(gulp.dest('./dev/js'));
     gulp.src('./src/img/**/**.*')
         .pipe(gulp.dest('./dev/img'));
-gulp.src('./src/scss/**.css')
+    gulp.src('./src/scss/**.css')
             .pipe(gulp.dest('./dev/css'));
+    gulp.src('./src/**.txt')
+            .pipe(gulp.dest('./dev/'));
       done();
 });
 
