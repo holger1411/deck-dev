@@ -1,10 +1,10 @@
-const { DateTime } = require("luxon");
-const navigationPlugin = require('@11ty/eleventy-navigation');
-const rssPlugin = require('@11ty/eleventy-plugin-rss');
-const Image = require("@11ty/eleventy-img");
-const EleventyFetch = require("@11ty/eleventy-fetch");
+import { DateTime } from "luxon";
+import navigationPlugin from "@11ty/eleventy-navigation";
+import rssPlugin from "@11ty/eleventy-plugin-rss";
+import Image from "@11ty/eleventy-img";
+import EleventyFetch from "@11ty/eleventy-fetch";
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
   // Universal Shortcodes (Adds to Liquid, Nunjucks, Handlebars)
   eleventyConfig.addShortcode("bgImg", function(imgName, test) {
     return `

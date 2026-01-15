@@ -1,20 +1,24 @@
 {
   "name": "Deck",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A Bootstrap 5 and Eleventy template",
   "license": "MIT",
   "private": "true",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run clean-prod  && npx eleventy && gulp sass && gulp minify-css && gulp dist-assets && gulp prod-copy && gulp inject-min-css && gulp minify-html && gulp purgecss && node webp.mjs",
-    "build-dev": "eleventy && gulp dist-assets && gulp sass",
-    "11ty": "eleventy && gulp inject-css",
-    "sync": "gulp browser-sync",
+    "build": "npm run clean && npm run clean-prod && npx eleventy && gulp --gulpfile gulpfile.cjs sass && gulp --gulpfile gulpfile.cjs minify-css && gulp --gulpfile gulpfile.cjs dist-assets && gulp --gulpfile gulpfile.cjs prod-copy && gulp --gulpfile gulpfile.cjs inject-min-css && gulp --gulpfile gulpfile.cjs minify-html && gulp --gulpfile gulpfile.cjs purgecss && node webp.mjs",
+    "build-dev": "eleventy && gulp --gulpfile gulpfile.cjs dist-assets && gulp --gulpfile gulpfile.cjs sass",
+    "11ty": "eleventy && gulp --gulpfile gulpfile.cjs inject-css",
+    "sync": "gulp --gulpfile gulpfile.cjs browser-sync",
     "watch-dev": "npm run build-dev && npm run sync",
-    "postinstall": "gulp copy-assets",
+    "postinstall": "gulp --gulpfile gulpfile.cjs copy-assets",
     "scss": "sass --style=compressed src/scss/theme.scss:dev/css/theme.css",
     "watch:all": "onchange './src/' -- npm run build-dev",
     "serve": "eleventy --serve",
@@ -23,9 +27,10 @@
     "clean-prod": "rm -rf public/*"
   },
   "dependencies": {
-    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-fetch": "^5.1.1",
     "aos": "^3.0.0-beta.6",
-    "bootstrap": "5.3.0-alpha3",
+    "bootstrap": "^5.3.8",
     "browser-sync": "2.27.10",
     "clean-css": "^5.3.1",
     "gulp": "^4.0.2",
@@ -39,9 +44,9 @@
   },
   "author": "Holger Koenemann",
   "devDependencies": {
-    "@11ty/eleventy-img": "^3.1.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.0",
     "gulp-html-replace": "^1.6.2",
@@ -49,11 +54,11 @@
     "gulp-purgecss": "^5.0.0",
     "imagemin": "^7.0.1",
     "imagemin-webp": "^7.0.0",
-    "sass": "^1.89.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.0.2",
     "postcss": "^8.4.23",
-    "react-is": "^18.2.0"
+    "react-is": "^18.2.0",
+    "sass": "^1.89.0"
   },
   "repository": {
     "type": "git",
