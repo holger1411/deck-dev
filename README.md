@@ -1,3 +1,10 @@
+<!-- templatedeck-backlink -->
+> 🎨 **DECK** is part of the [TemplateDeck](https://templatedeck.com) collection — handcrafted HTML and Astro templates for developers and designers.
+>
+> 📥 **[Download free on TemplateDeck](https://templatedeck.com/templates/deck)** · 🌐 **[Browse all templates](https://templatedeck.com)**
+
+---
+
 # Deck - A Free Bootstrap 5 Personal Website Template
 
 **Live Demo**: [deck-html-template.netlify.app](https://deck-html-template.netlify.app/)
